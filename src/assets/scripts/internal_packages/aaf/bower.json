@@ -1,0 +1,40 @@
+{
+  "name": "aaf",
+  "version": "1.0.0",
+  "main": "aaf/aafPkg.js",
+  "dependencies": {
+    "angular": "1.5.8",
+    "angular-animate": "1.5.8",
+    "angular-aria": "1.5.8",
+    "angular-cookies": "1.5.8",
+    "angular-message-format": "1.5.8",
+    "angular-messages": "1.5.8",
+    "angular-resource": "1.5.8",
+    "angular-route": "1.5.8",
+    "angular-sanitize": "1.5.8",
+    "angular-touch": "1.5.8",
+    "angular-mocks": "1.5.8",
+    "jquery-ui": "1.11.4",
+    "bootstrap": "3.3.5",
+    "ng-file-upload": "10.0.2",
+    "requirejs": "2.1.16",
+    "fontawesome": "https://github.com/FortAwesome/Font-Awesome.git#~4.5.0",
+    "json-logic-js": "https://github.com/jwadhams/json-logic-js.git#1.0.3"
+  },
+  "devDependencies": {},
+  "ignore": [
+    "Gruntfile.js",
+    "package.json",
+    ".gitattributes",
+    ".gitignore",
+    "bower.json"
+  ],
+  "overrides": {
+    "bootstrap": {
+      "main": [
+        "dist/css/bootstrap.css",
+        "dist/js/bootstrap.js"
+      ]
+    }
+  }
+}

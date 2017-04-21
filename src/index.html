@@ -1,0 +1,45 @@
+<!--
+   Angular/TypeScript JumpStart
+   Dan Wahlin
+
+   @DanWahlin
+   http://weblogs.asp.net/dwahlin
+   http://github.com/danwahlin
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <base href="/">
+    <title>Angular TypeScript JumpStart App</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Angular 2 JumpStart">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300,400,600' rel='stylesheet' type='text/css' />
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" />
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <!-- Polyfill(s) for older browsers -->
+    <script src="node_modules/core-js/client/shim.min.js"></script>
+
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="node_modules/reflect-metadata/Reflect.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+
+    <script src="systemjs.config.js"></script>
+    <script>
+        System.import('app').catch(function (err) { console.error(err); });
+    </script>
+
+</head>
+
+<body>
+    <cm-app-component>
+        Loading...
+    </cm-app-component>
+
+
+</body>
+
+</html>
