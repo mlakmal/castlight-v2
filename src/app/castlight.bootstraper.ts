@@ -104,6 +104,7 @@ export class CastLightBootstraper {
               '$sceDelegateProvider',
               ($sceDelegateProvider: any) => {
                 $sceDelegateProvider.resourceUrlWhitelist([
+                  'self',
                   'https://m.den-signoff08.castlighthealth.com/**', 
                   'https://api.den-signoff08.castlighthealth.com/**', 
                   'https://saturn.us.castlighthealth.com/**', 
