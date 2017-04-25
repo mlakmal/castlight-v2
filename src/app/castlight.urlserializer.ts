@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { UrlTree, UrlSerializer, DefaultUrlSerializer } from '@angular/router';
 
 /*
-  DefaultUrlSerializer serializes the URL after the an AngularJS 1.5 widget
+  DefaultUrlSerializer serializes the URL after the AngularJS 1.5 widget
   serializes it. This confuses the embedded widget.
 
   Eg:
@@ -13,7 +13,7 @@ import { UrlTree, UrlSerializer, DefaultUrlSerializer } from '@angular/router';
     localhost/castlight##find-care%243Ftab=providers
       by Angular
 
-  The fix is convert '%3F' back to '?' before passing it across to Angular.
+  The fix is to convert '%3F' back to '?' before passing it across to Angular.
   And change '?' to '%3F' while serializing the UrlTree.
   */
 @Injectable()
