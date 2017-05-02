@@ -151,7 +151,7 @@ export class CastLightBootstraper {
     let isEmulated = 'N';
     let widget = angular.element('<div cl-saturn-bootstrap></div>');
 
-    widget.attr('cl-saturn-app-config', '"{dentalRedirectUrl:' + '\'' + this._dentalRedirectUrl + '\'' + ',visionRedirectUrl:' + '\'' + this._visionRedirectUrl + '\'' + ',pharmacyRedirectUrl:' + '\'' + this._pharmacyRedirectUrl + '\'' + ',Emulated:' + '\'' + isEmulated + '\'' + ',BrandId:' + '\'' + 'ABCBS' + '\'' + '}"');
+    widget.attr('cl-saturn-app-config', '{dentalRedirectUrl:' + '\'' + this._dentalRedirectUrl + '\'' + ',visionRedirectUrl:' + '\'' + this._visionRedirectUrl + '\'' + ',pharmacyRedirectUrl:' + '\'' + this._pharmacyRedirectUrl + '\'' + ',Emulated:' + '\'' + isEmulated + '\'' + ',BrandId:' + '\'' + 'ABCBS' + '\'' + '}');
 
     //alert(this._appCon.web.castlight.baseUrl);
     widget.attr('cl-saturn-static-url', '\'' + this._appCon.web.castlight.baseUrl + this._appCon.web.castlight.version + '/\'');
