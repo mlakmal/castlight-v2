@@ -89,6 +89,9 @@ export class CastLightBootstraper {
           SystemJS.import('angular-cache'),
           SystemJS.import('saturn')
         ]).then((p: any) => {
+          // Remove the spinner
+          $(".anthem-spinner").remove();
+
           let cu = p[0];
 
           if (!this._ngModule) {
@@ -150,7 +153,6 @@ export class CastLightBootstraper {
   private getCastlightWidget(samlAssert: string) {
     let isEmulated = 'N';
     let widget = angular.element('<div cl-saturn-bootstrap></div>');
-
     widget.attr('cl-saturn-app-config', '"{dentalRedirectUrl:' + '\'' + this._dentalRedirectUrl + '\'' + ',visionRedirectUrl:' + '\'' + this._visionRedirectUrl + '\'' + ',pharmacyRedirectUrl:' + '\'' + this._pharmacyRedirectUrl + '\'' + ',Emulated:' + '\'' + isEmulated + '\'' + ',BrandId:' + '\'' + 'ABCBS' + '\'' + '}"');
 
     //alert(this._appCon.web.castlight.baseUrl);
