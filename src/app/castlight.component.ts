@@ -8,7 +8,12 @@ declare var clSaturnExport: any;
 @Component({
     moduleId: module.id,
     selector: 'cm-castlight-component',
-    template: `<div>castlight page <a [routerLink]="[ '/test' ]">go to test page</a></div>`
+    template: `<div>
+                 castlight page <a [routerLink]="[ '/test' ]">go to test page</a>
+               </div>
+               <div class="anthem-spinner">
+                 <img src="https://loading.io/spinners/azure/index.azure-round-loader.svg">
+               </div>`
 })
 export class CastlightComponent {
 
